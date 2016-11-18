@@ -1,11 +1,11 @@
 #include <gtk/gtk.h>
 #include <stdlib.h>
 #include <iostream>
-#define __STDC_FORMAT_MACROS
+#define __STDC_FORMAT_MACROS  //!< macro to format macros
 
 
 #ifndef _MY__GLOBAL__H
-#define _MY__GLOBAL__H
+#define _MY__GLOBAL__H //!< Macro to define global.h
 
 using namespace std;
 

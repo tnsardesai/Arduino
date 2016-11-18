@@ -109,6 +109,7 @@ Include dependency graph for main.cpp:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a736aeda0653ee56f9d9a4fd12b45166e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a736aeda0653ee56f9d9a4fd12b45166e">VOLTAGE_DISPLAY_UPDATE_MS</a>&#160;&#160;&#160;100</td></tr>
+<tr class="memdesc:a736aeda0653ee56f9d9a4fd12b45166e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Every 100ms check if there is a change in the potentiometer.  <a href="#a736aeda0653ee56f9d9a4fd12b45166e">More...</a><br /></td></tr>
 <tr class="separator:a736aeda0653ee56f9d9a4fd12b45166e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ffcc27689dcff0f1f551da88cfd56bd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a7ffcc27689dcff0f1f551da88cfd56bd">GuiappGET</a>(xx)&#160;&#160;&#160;<a class="el" href="global_8h.html#afe8961a6c8e9609c342b33cf8012c320">gui_app</a>-&gt;xx=GTK_WIDGET(gtk_builder_get_object(p_builder,#xx))</td></tr>
 <tr class="separator:a7ffcc27689dcff0f1f551da88cfd56bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,20 +117,28 @@ Macros</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a42831ac9db9027fad5a908cf6945ba5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a42831ac9db9027fad5a908cf6945ba5d">ObtainGuiWidgets</a> (GtkBuilder *p_builder)</td></tr>
+<tr class="memdesc:a42831ac9db9027fad5a908cf6945ba5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to obtain the GUIWidgets. includes GuiappGET for widgets defined in <a class="el" href="global_8h.html">global.h</a>.  <a href="#a42831ac9db9027fad5a908cf6945ba5d">More...</a><br /></td></tr>
 <tr class="separator:a42831ac9db9027fad5a908cf6945ba5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6b3686a173a9e36b19c9e581c3126c9"><td class="memItemLeft" align="right" valign="top">gboolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#aa6b3686a173a9e36b19c9e581c3126c9">Voltage_Display_Displayer</a> (gpointer p_gptr)</td></tr>
+<tr class="memdesc:aa6b3686a173a9e36b19c9e581c3126c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function locks the mutex to display the voltage. Once displayed it unlocks the mutex.  <a href="#aa6b3686a173a9e36b19c9e581c3126c9">More...</a><br /></td></tr>
 <tr class="separator:aa6b3686a173a9e36b19c9e581c3126c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6476bac2120be7b53beae69b27b392bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a6476bac2120be7b53beae69b27b392bc">button_opendevice_clicked</a> (GtkWidget *p_wdgt, gpointer p_data)</td></tr>
+<tr class="memdesc:a6476bac2120be7b53beae69b27b392bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Action to perform when the open device button is clicked.  <a href="#a6476bac2120be7b53beae69b27b392bc">More...</a><br /></td></tr>
 <tr class="separator:a6476bac2120be7b53beae69b27b392bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3cf8a83b5ee3d3d19ed77fe61a7497d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ad3cf8a83b5ee3d3d19ed77fe61a7497d">button_closedevice_clicked</a> (GtkWidget *p_wdgt, gpointer p_data)</td></tr>
+<tr class="memdesc:ad3cf8a83b5ee3d3d19ed77fe61a7497d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Action to perform when the close device button is clicked.  <a href="#ad3cf8a83b5ee3d3d19ed77fe61a7497d">More...</a><br /></td></tr>
 <tr class="separator:ad3cf8a83b5ee3d3d19ed77fe61a7497d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea199709c0a72e65d41b5e2cb32e65de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#aea199709c0a72e65d41b5e2cb32e65de">button_send_clicked</a> (GtkWidget *p_wdgt, gpointer p_data)</td></tr>
+<tr class="memdesc:aea199709c0a72e65d41b5e2cb32e65de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Action to perform when the send button is clicked.  <a href="#aea199709c0a72e65d41b5e2cb32e65de">More...</a><br /></td></tr>
 <tr class="separator:aea199709c0a72e65d41b5e2cb32e65de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af74b39416a3b41e57319f7f474652e0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#af74b39416a3b41e57319f7f474652e0d">scale_rgb_value_changed</a> (GtkWidget *p_wdgt, gpointer p_data)</td></tr>
+<tr class="memdesc:af74b39416a3b41e57319f7f474652e0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Action to perform when the slider value has changed.  <a href="#af74b39416a3b41e57319f7f474652e0d">More...</a><br /></td></tr>
 <tr class="separator:af74b39416a3b41e57319f7f474652e0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a133607be026e45cbd298bb6644ac5bc4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a133607be026e45cbd298bb6644ac5bc4">button_exit_clicked</a> (GtkWidget *p_wdgt, gpointer p_data)</td></tr>
+<tr class="memdesc:a133607be026e45cbd298bb6644ac5bc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Action to perform when the exit button is clicked.  <a href="#a133607be026e45cbd298bb6644ac5bc4">More...</a><br /></td></tr>
 <tr class="separator:a133607be026e45cbd298bb6644ac5bc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (int argc, char **argv)</td></tr>
+<tr class="memdesc:a3c04138a5bfe5d72780bb7e82a18e627"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main function that is the program's entry point.  <a href="#a3c04138a5bfe5d72780bb7e82a18e627">More...</a><br /></td></tr>
 <tr class="separator:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -159,6 +168,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Every 100ms check if there is a change in the potentiometer. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
@@ -186,6 +197,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Action to perform when the close device button is clicked. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*p_wdgt</td><td>pointer to the button that called this function </td></tr>
+    <tr><td class="paramname">p_data</td><td>pointer to some data </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a133607be026e45cbd298bb6644ac5bc4"></a>
@@ -211,6 +231,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Action to perform when the exit button is clicked. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*p_wdgt</td><td>pointer to the button that called this function </td></tr>
+    <tr><td class="paramname">p_data</td><td>pointer to some data </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -238,6 +267,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Action to perform when the open device button is clicked. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*p_wdgt</td><td>pointer to the button that called this function </td></tr>
+    <tr><td class="paramname">p_data</td><td>pointer to some data </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="aea199709c0a72e65d41b5e2cb32e65de"></a>
@@ -263,6 +301,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Action to perform when the send button is clicked. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*p_wdgt</td><td>pointer to the button that called this function </td></tr>
+    <tr><td class="paramname">p_data</td><td>pointer to some data </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -290,6 +337,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>The main function that is the program's entry point. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">argc</td><td>the argument count </td></tr>
+    <tr><td class="paramname">**argv</td><td>pointer to arguments </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a42831ac9db9027fad5a908cf6945ba5d"></a>
@@ -305,6 +361,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Function to obtain the GUIWidgets. includes GuiappGET for widgets defined in <a class="el" href="global_8h.html">global.h</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*p_builder</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -332,6 +396,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Action to perform when the slider value has changed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*p_wdgt</td><td>pointer to the button that called this function </td></tr>
+    <tr><td class="paramname">p_data</td><td>pointer to some data </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="aa6b3686a173a9e36b19c9e581c3126c9"></a>
@@ -348,12 +421,20 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>This function locks the mutex to display the voltage. Once displayed it unlocks the mutex. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_gptr</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Nov 17 2016 19:15:23 for TeensyControl by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Nov 17 2016 19:39:33 for TeensyControl by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
