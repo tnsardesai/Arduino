@@ -5,11 +5,11 @@
 #include <errno.h>
 #include "global.h"
 
-#define READ_THREAD_SLEEP_DURATION_US 100000
-#define BETWEEN_CHARACTERS_TIMEOUT_US 1000
-#define MAX_VOLTAGE 3.3
-#define MAX_ADC_VALUE 1024.0
-#define POT_COMMAND 'P'
+#define READ_THREAD_SLEEP_DURATION_US 100000 //!< Duration of Thread Sleep
+#define BETWEEN_CHARACTERS_TIMEOUT_US 1000 //!< Duration of Thread Sleep
+#define MAX_VOLTAGE 3.3 //!< Duration of Thread Sleep
+#define MAX_ADC_VALUE 1024.0 //!< Duration of Thread Sleep
+#define POT_COMMAND 'P' //!< Duration of Thread Sleep
 
 // define packet parameters
 #define PACKET_START_BYTE  0xAA
