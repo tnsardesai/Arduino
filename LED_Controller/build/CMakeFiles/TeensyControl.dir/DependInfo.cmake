@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/pi/Desktop/cse2100/GUI_Teensy/LED_Controller/src/global.cpp" "/home/pi/Desktop/cse2100/GUI_Teensy/LED_Controller/build/CMakeFiles/TeensyControl.dir/src/global.cpp.o"
-  "/home/pi/Desktop/cse2100/GUI_Teensy/LED_Controller/src/main.cpp" "/home/pi/Desktop/cse2100/GUI_Teensy/LED_Controller/build/CMakeFiles/TeensyControl.dir/src/main.cpp.o"
-  "/home/pi/Desktop/cse2100/GUI_Teensy/LED_Controller/src/serialreadthread.cpp" "/home/pi/Desktop/cse2100/GUI_Teensy/LED_Controller/build/CMakeFiles/TeensyControl.dir/src/serialreadthread.cpp.o"
+  "/home/pi/Desktop/lol/cse2100/LED_Controller/src/global.cpp" "/home/pi/Desktop/lol/cse2100/LED_Controller/build/CMakeFiles/TeensyControl.dir/src/global.cpp.o"
+  "/home/pi/Desktop/lol/cse2100/LED_Controller/src/main.cpp" "/home/pi/Desktop/lol/cse2100/LED_Controller/build/CMakeFiles/TeensyControl.dir/src/main.cpp.o"
+  "/home/pi/Desktop/lol/cse2100/LED_Controller/src/serialreadthread.cpp" "/home/pi/Desktop/lol/cse2100/LED_Controller/build/CMakeFiles/TeensyControl.dir/src/serialreadthread.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

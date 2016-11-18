@@ -14,7 +14,27 @@ stdlib.h
 iostream
 -
 
-/home/pi/Desktop/cse2100/GUI_Teensy/LED_Controller/src/serialreadthread.cpp
+/home/pi/Desktop/lol/cse2100/LED_Controller/src/global.cpp
+global.h
+/home/pi/Desktop/lol/cse2100/LED_Controller/src/global.h
+
+/home/pi/Desktop/lol/cse2100/LED_Controller/src/main.cpp
+global.h
+/home/pi/Desktop/lol/cse2100/LED_Controller/src/global.h
+string.h
+/home/pi/Desktop/lol/cse2100/LED_Controller/src/string.h
+sys/types.h
+-
+sys/stat.h
+-
+fcntl.h
+-
+unistd.h
+-
+termios.h
+-
+
+/home/pi/Desktop/lol/cse2100/LED_Controller/src/serialreadthread.cpp
 glib.h
 -
 unistd.h
@@ -24,7 +44,7 @@ string.h
 errno.h
 -
 global.h
-/home/pi/Desktop/cse2100/GUI_Teensy/LED_Controller/src/global.h
+/home/pi/Desktop/lol/cse2100/LED_Controller/src/global.h
 
 /usr/include/atk-1.0/atk/atk-enum-types.h
 atk/atkversion.h

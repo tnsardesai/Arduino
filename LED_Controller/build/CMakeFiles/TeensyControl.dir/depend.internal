@@ -3,7 +3,7 @@
 
 CMakeFiles/TeensyControl.dir/src/global.cpp.o
  ../include/global.h
- /home/pi/Desktop/cse2100/GUI_Teensy/LED_Controller/src/global.cpp
+ /home/pi/Desktop/lol/cse2100/LED_Controller/src/global.cpp
  /usr/include/atk-1.0/atk/atk-enum-types.h
  /usr/include/atk-1.0/atk/atk.h
  /usr/include/atk-1.0/atk/atkaction.h
@@ -582,7 +582,7 @@ CMakeFiles/TeensyControl.dir/src/global.cpp.o
  /usr/lib/arm-linux-gnueabihf/glib-2.0/include/glibconfig.h
 CMakeFiles/TeensyControl.dir/src/main.cpp.o
  ../include/global.h
- /home/pi/Desktop/cse2100/GUI_Teensy/LED_Controller/src/main.cpp
+ /home/pi/Desktop/lol/cse2100/LED_Controller/src/main.cpp
  /usr/include/atk-1.0/atk/atk-enum-types.h
  /usr/include/atk-1.0/atk/atk.h
  /usr/include/atk-1.0/atk/atkaction.h
@@ -1161,7 +1161,7 @@ CMakeFiles/TeensyControl.dir/src/main.cpp.o
  /usr/lib/arm-linux-gnueabihf/glib-2.0/include/glibconfig.h
 CMakeFiles/TeensyControl.dir/src/serialreadthread.cpp.o
  ../include/global.h
- /home/pi/Desktop/cse2100/GUI_Teensy/LED_Controller/src/serialreadthread.cpp
+ /home/pi/Desktop/lol/cse2100/LED_Controller/src/serialreadthread.cpp
  /usr/include/atk-1.0/atk/atk-enum-types.h
  /usr/include/atk-1.0/atk/atk.h
  /usr/include/atk-1.0/atk/atkaction.h

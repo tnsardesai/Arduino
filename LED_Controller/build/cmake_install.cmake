@@ -1,4 +1,4 @@
-# Install script for directory: /home/pi/Desktop/cse2100/GUI_Teensy/LED_Controller
+# Install script for directory: /home/pi/Desktop/lol/cse2100/LED_Controller
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,7 +38,7 @@ else()
   set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 endif()
 
-file(WRITE "/home/pi/Desktop/cse2100/GUI_Teensy/LED_Controller/build/${CMAKE_INSTALL_MANIFEST}" "")
+file(WRITE "/home/pi/Desktop/lol/cse2100/LED_Controller/build/${CMAKE_INSTALL_MANIFEST}" "")
 foreach(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  file(APPEND "/home/pi/Desktop/cse2100/GUI_Teensy/LED_Controller/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+  file(APPEND "/home/pi/Desktop/lol/cse2100/LED_Controller/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 endforeach()

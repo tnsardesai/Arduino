@@ -38,14 +38,15 @@
 #include <unistd.h>
 #include <termios.h>
 
-#define VOLTAGE_DISPLAY_UPDATE_MS 100
+#define VOLTAGE_DISPLAY_UPDATE_MS 100 //!< Every 100ms check if there is a change in the potentiometer
 
-//********************************************************************
-// to connect widgets with code
-//********************************************************************
+/*!
+  * \Function to obtain the GUIWidgets.
+  * \includes GuiappGET for widgets defined in global.h
+ */
 void ObtainGuiWidgets(GtkBuilder *p_builder)
 {
-  #define GuiappGET(xx) gui_app->xx=GTK_WIDGET(gtk_builder_get_object(p_builder,#xx))
+  #define GuiappGET(xx) gui_app->xx=GTK_WIDGET(gtk_builder_get_object(p_builder,#xx))  //!< Convertes the function on the right to the one on the left
   GuiappGET(window1);
   GuiappGET(entry_sd);
   GuiappGET(label_voltage);
@@ -63,9 +64,10 @@ GuiappGET(tx_label);
 }
 
 
-//********************************************************************
-// GUI handlers
-//********************************************************************
+/**
+  * \This function locks the mutex to display the voltage.
+  * \Once displayed it unlocks the mutex.
+*/
 gboolean  Voltage_Display_Displayer(gpointer p_gptr)
 {
   // do not change this function
@@ -75,11 +77,14 @@ gboolean  Voltage_Display_Displayer(gpointer p_gptr)
   return true;
 }
 
+<<<<<<< Updated upstream
 /**
  * \brief Action to perform when the open device button is clicked
  * \param *p_wdgt pointer to the button that called this function
  * \param p_data pointer to some data
  */
+=======
+>>>>>>> Stashed changes
 
 extern "C" void button_opendevice_clicked(GtkWidget *p_wdgt, gpointer p_data ) 
 {

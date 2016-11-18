@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/Desktop/cse2100/GUI_Teensy/LED_Controller
+CMAKE_SOURCE_DIR = /home/pi/Desktop/lol/cse2100/LED_Controller
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/Desktop/cse2100/GUI_Teensy/LED_Controller/build
+CMAKE_BINARY_DIR = /home/pi/Desktop/lol/cse2100/LED_Controller/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/TeensyControl.dir/depend.make
@@ -51,17 +51,17 @@ include CMakeFiles/TeensyControl.dir/flags.make
 
 CMakeFiles/TeensyControl.dir/src/global.cpp.o: CMakeFiles/TeensyControl.dir/flags.make
 CMakeFiles/TeensyControl.dir/src/global.cpp.o: ../src/global.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/pi/Desktop/cse2100/GUI_Teensy/LED_Controller/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/pi/Desktop/lol/cse2100/LED_Controller/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/TeensyControl.dir/src/global.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/TeensyControl.dir/src/global.cpp.o -c /home/pi/Desktop/cse2100/GUI_Teensy/LED_Controller/src/global.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/TeensyControl.dir/src/global.cpp.o -c /home/pi/Desktop/lol/cse2100/LED_Controller/src/global.cpp
 
 CMakeFiles/TeensyControl.dir/src/global.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TeensyControl.dir/src/global.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/pi/Desktop/cse2100/GUI_Teensy/LED_Controller/src/global.cpp > CMakeFiles/TeensyControl.dir/src/global.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/pi/Desktop/lol/cse2100/LED_Controller/src/global.cpp > CMakeFiles/TeensyControl.dir/src/global.cpp.i
 
 CMakeFiles/TeensyControl.dir/src/global.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TeensyControl.dir/src/global.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/pi/Desktop/cse2100/GUI_Teensy/LED_Controller/src/global.cpp -o CMakeFiles/TeensyControl.dir/src/global.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/pi/Desktop/lol/cse2100/LED_Controller/src/global.cpp -o CMakeFiles/TeensyControl.dir/src/global.cpp.s
 
 CMakeFiles/TeensyControl.dir/src/global.cpp.o.requires:
 .PHONY : CMakeFiles/TeensyControl.dir/src/global.cpp.o.requires
@@ -74,17 +74,17 @@ CMakeFiles/TeensyControl.dir/src/global.cpp.o.provides.build: CMakeFiles/TeensyC
 
 CMakeFiles/TeensyControl.dir/src/serialreadthread.cpp.o: CMakeFiles/TeensyControl.dir/flags.make
 CMakeFiles/TeensyControl.dir/src/serialreadthread.cpp.o: ../src/serialreadthread.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/pi/Desktop/cse2100/GUI_Teensy/LED_Controller/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/pi/Desktop/lol/cse2100/LED_Controller/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/TeensyControl.dir/src/serialreadthread.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/TeensyControl.dir/src/serialreadthread.cpp.o -c /home/pi/Desktop/cse2100/GUI_Teensy/LED_Controller/src/serialreadthread.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/TeensyControl.dir/src/serialreadthread.cpp.o -c /home/pi/Desktop/lol/cse2100/LED_Controller/src/serialreadthread.cpp
 
 CMakeFiles/TeensyControl.dir/src/serialreadthread.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TeensyControl.dir/src/serialreadthread.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/pi/Desktop/cse2100/GUI_Teensy/LED_Controller/src/serialreadthread.cpp > CMakeFiles/TeensyControl.dir/src/serialreadthread.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/pi/Desktop/lol/cse2100/LED_Controller/src/serialreadthread.cpp > CMakeFiles/TeensyControl.dir/src/serialreadthread.cpp.i
 
 CMakeFiles/TeensyControl.dir/src/serialreadthread.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TeensyControl.dir/src/serialreadthread.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/pi/Desktop/cse2100/GUI_Teensy/LED_Controller/src/serialreadthread.cpp -o CMakeFiles/TeensyControl.dir/src/serialreadthread.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/pi/Desktop/lol/cse2100/LED_Controller/src/serialreadthread.cpp -o CMakeFiles/TeensyControl.dir/src/serialreadthread.cpp.s
 
 CMakeFiles/TeensyControl.dir/src/serialreadthread.cpp.o.requires:
 .PHONY : CMakeFiles/TeensyControl.dir/src/serialreadthread.cpp.o.requires
@@ -97,17 +97,17 @@ CMakeFiles/TeensyControl.dir/src/serialreadthread.cpp.o.provides.build: CMakeFil
 
 CMakeFiles/TeensyControl.dir/src/main.cpp.o: CMakeFiles/TeensyControl.dir/flags.make
 CMakeFiles/TeensyControl.dir/src/main.cpp.o: ../src/main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/pi/Desktop/cse2100/GUI_Teensy/LED_Controller/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/pi/Desktop/lol/cse2100/LED_Controller/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/TeensyControl.dir/src/main.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/TeensyControl.dir/src/main.cpp.o -c /home/pi/Desktop/cse2100/GUI_Teensy/LED_Controller/src/main.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/TeensyControl.dir/src/main.cpp.o -c /home/pi/Desktop/lol/cse2100/LED_Controller/src/main.cpp
 
 CMakeFiles/TeensyControl.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TeensyControl.dir/src/main.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/pi/Desktop/cse2100/GUI_Teensy/LED_Controller/src/main.cpp > CMakeFiles/TeensyControl.dir/src/main.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/pi/Desktop/lol/cse2100/LED_Controller/src/main.cpp > CMakeFiles/TeensyControl.dir/src/main.cpp.i
 
 CMakeFiles/TeensyControl.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TeensyControl.dir/src/main.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/pi/Desktop/cse2100/GUI_Teensy/LED_Controller/src/main.cpp -o CMakeFiles/TeensyControl.dir/src/main.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/pi/Desktop/lol/cse2100/LED_Controller/src/main.cpp -o CMakeFiles/TeensyControl.dir/src/main.cpp.s
 
 CMakeFiles/TeensyControl.dir/src/main.cpp.o.requires:
 .PHONY : CMakeFiles/TeensyControl.dir/src/main.cpp.o.requires
@@ -149,6 +149,6 @@ CMakeFiles/TeensyControl.dir/clean:
 .PHONY : CMakeFiles/TeensyControl.dir/clean
 
 CMakeFiles/TeensyControl.dir/depend:
-	cd /home/pi/Desktop/cse2100/GUI_Teensy/LED_Controller/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Desktop/cse2100/GUI_Teensy/LED_Controller /home/pi/Desktop/cse2100/GUI_Teensy/LED_Controller /home/pi/Desktop/cse2100/GUI_Teensy/LED_Controller/build /home/pi/Desktop/cse2100/GUI_Teensy/LED_Controller/build /home/pi/Desktop/cse2100/GUI_Teensy/LED_Controller/build/CMakeFiles/TeensyControl.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/pi/Desktop/lol/cse2100/LED_Controller/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Desktop/lol/cse2100/LED_Controller /home/pi/Desktop/lol/cse2100/LED_Controller /home/pi/Desktop/lol/cse2100/LED_Controller/build /home/pi/Desktop/lol/cse2100/LED_Controller/build /home/pi/Desktop/lol/cse2100/LED_Controller/build/CMakeFiles/TeensyControl.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/TeensyControl.dir/depend
 
