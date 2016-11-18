@@ -75,6 +75,12 @@ gboolean  Voltage_Display_Displayer(gpointer p_gptr)
   return true;
 }
 
+/**
+ * \brief Action to perform when the open device button is clicked
+ * \param *p_wdgt pointer to the button that called this function
+ * \param p_data pointer to some data
+ */
+
 extern "C" void button_opendevice_clicked(GtkWidget *p_wdgt, gpointer p_data ) 
 {
   //do not change  the next few lines
@@ -107,6 +113,12 @@ extern "C" void button_opendevice_clicked(GtkWidget *p_wdgt, gpointer p_data )
 
 }
 
+/**
+ * \brief Action to perform when the close device button is clicked
+ * \param *p_wdgt pointer to the button that called this function
+ * \param p_data pointer to some data
+ */
+
 extern "C" void button_closedevice_clicked(GtkWidget *p_wdgt, gpointer p_data ) 
 {
   //this is how you disable a button:
@@ -119,6 +131,12 @@ extern "C" void button_closedevice_clicked(GtkWidget *p_wdgt, gpointer p_data )
   ser_dev=-1;
 
 }
+
+/**
+ * \brief Action to perform when the send button is clicked
+ * \param *p_wdgt pointer to the button that called this function
+ * \param p_data pointer to some data
+ */
 
 extern "C" void button_send_clicked(GtkWidget *p_wdgt, gpointer p_data ) 
 {
@@ -179,7 +197,11 @@ const char *t_blue_value;
   //setting range on scale slider to uc_red_value 
   gtk_range_set_value(GTK_RANGE(gui_app->scaleB),g_blue_value);  
 }
-
+/**
+ * \brief Action to perform when the slider value has changed
+ * \param *p_wdgt pointer to the button that called this function
+ * \param p_data pointer to some data
+ */
 extern "C" void scale_rgb_value_changed(GtkWidget *p_wdgt, gpointer p_data ) 
 {
 	
@@ -235,7 +257,11 @@ extern "C" void scale_rgb_value_changed(GtkWidget *p_wdgt, gpointer p_data )
 	  
 }
 
-
+/**
+ * \brief Action to perform when the exit button is clicked
+ * \param *p_wdgt pointer to the button that called this function
+ * \param p_data pointer to some data
+ */
 extern "C" void button_exit_clicked(GtkWidget *p_wdgt, gpointer p_data ) 
 {
   gtk_main_quit();
@@ -243,14 +269,11 @@ extern "C" void button_exit_clicked(GtkWidget *p_wdgt, gpointer p_data )
 }
 
 
-
-//********************************************************************
-//********************************************************************
-// 
-//   Main loop
-//
-//********************************************************************
-//********************************************************************
+/**
+ * \brief The main function that is the program's entry point.
+ * \param argc the argument count
+ * \param **argv pointer to arguments
+ */
 
 int main(int argc, char **argv)
 {
