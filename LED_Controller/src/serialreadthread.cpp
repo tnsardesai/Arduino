@@ -1,16 +1,3 @@
-/**
- * \author Tanmay Sardesai
- * \author Satej Mhatre
- * \version 1.0
- * \date 2016-17-15
- * \bug None.
- * \warning None.
- *
- * \copyright GNU Public License.
- *
- * \mainpage The Teensy LED Controller - Global.cpp
- * \section intro_sec Introduction
- */
 
 #include <glib.h>
 #include <unistd.h>
@@ -33,7 +20,7 @@
 /**
  * \brief This function is used to validate an incoming packet.
  * \param packetSize integer to store packet size
- * \param packet char pointed to the packet
+ * \param *packet char pointed to the packet
  */
 int validatePacket(unsigned int packetSize, char *packet)
 {
@@ -56,7 +43,7 @@ int validatePacket(unsigned int packetSize, char *packet)
     }
 
     // compute the checksum
-    char checksum = 0x00; //!< 1 byte variable that stores the checksum that is at the end of the packet
+    char checksum = 0x00; // 1 byte variable that stores the checksum that is at the end of the packet
     for(unsigned int i = 0; i < packetSize - 1; i++)
     {
         checksum = checksum ^ packet[i];
@@ -72,18 +59,18 @@ int validatePacket(unsigned int packetSize, char *packet)
     return true;
 }
 
-/**
+/*!
  * \brief This function is used to Read incoming packets.
  */
 
 gpointer Serial_Read_Thread()
 {
-  ssize_t r_res; //!< variable to store the status of reading and storing packet
-  char ob[50]; //!< char array to store packet
-  unsigned int count=0; //!< counter for packet
-  static char buffer[PACKET_MAX_BYTES]; //!< char array to store buffer
-  unsigned int packetSize = PACKET_MIN_BYTES;
-  double voltage_disp;
+  ssize_t r_res; // variable to store the status of reading and storing packet.
+  char ob[50]; // char array to store packet.
+  unsigned int count=0; // counter for packet.
+  static char buffer[PACKET_MAX_BYTES]; // char array to store buffer.
+  unsigned int packetSize = PACKET_MIN_BYTES; // integer to store packet size
+  double voltage_disp; //voltage display
 
   while(!kill_all_threads)
     {
