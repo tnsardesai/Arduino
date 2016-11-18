@@ -6,16 +6,16 @@
 #include "global.h"
 
 #define READ_THREAD_SLEEP_DURATION_US 100000 //!< Duration of Thread Sleep
-#define BETWEEN_CHARACTERS_TIMEOUT_US 1000 //!< Duration of Thread Sleep
-#define MAX_VOLTAGE 3.3 //!< Duration of Thread Sleep
-#define MAX_ADC_VALUE 1024.0 //!< Duration of Thread Sleep
-#define POT_COMMAND 'P' //!< Duration of Thread Sleep
+#define BETWEEN_CHARACTERS_TIMEOUT_US 1000 //!< Duration of Sleep between characters
+#define MAX_VOLTAGE 3.3 //!< Maximum Voltage
+#define MAX_ADC_VALUE 1024.0 //!< Maximum analog to digital converter value
+#define POT_COMMAND 'P' //!< Command from the potentiometer
 
 // define packet parameters
-#define PACKET_START_BYTE  0xAA
-#define PACKET_OVERHEAD_BYTES  3
-#define PACKET_MIN_BYTES  PACKET_OVERHEAD_BYTES + 1
-#define PACKET_MAX_BYTES  255
+#define PACKET_START_BYTE  0xAA //!< Start packet
+#define PACKET_OVERHEAD_BYTES  3 //!< Packet overhead bytess
+#define PACKET_MIN_BYTES  PACKET_OVERHEAD_BYTES + 1 //!< Minimum packet data size
+#define PACKET_MAX_BYTES  255 //!< Maximum packet data size
 
 /**
  * \brief This function is used to validate an incoming packet.
