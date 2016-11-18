@@ -1,9 +1,3 @@
-/**
- * \author Tanmay Sardesai
- * \author Satej Mhatre
- * \version 1.0
- * \date 2016-17-15
- */
 
 #include "global.h"
 
