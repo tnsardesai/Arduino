@@ -1,3 +1,17 @@
+/**
+ * \author Tanmay Sardesai
+ * \author Satej Mhatre
+ * \version 1.0
+ * \date 2016-17-15
+ * \bug None.
+ * \warning None.
+ *
+ * \copyright GNU Public License.
+ *
+ * \mainpage The Teensy LED Controller - Global.cpp
+ * \section intro_sec Introduction
+ */
+
 #include <glib.h>
 #include <unistd.h>
 #include <string.h>
@@ -16,7 +30,11 @@
 #define PACKET_MIN_BYTES  PACKET_OVERHEAD_BYTES + 1
 #define PACKET_MAX_BYTES  255
 
-
+/**
+ * \brief This function is used to validate an incoming packet.
+ * \param packetSize integer to store packet size
+ * \param packet char pointed to the packet
+ */
 int validatePacket(unsigned int packetSize, char *packet)
 {
     // check the packet size
@@ -38,7 +56,7 @@ int validatePacket(unsigned int packetSize, char *packet)
     }
 
     // compute the checksum
-    char checksum = 0x00;
+    char checksum = 0x00; //!< 1 byte variable that stores the checksum that is at the end of the packet
     for(unsigned int i = 0; i < packetSize - 1; i++)
     {
         checksum = checksum ^ packet[i];
@@ -54,14 +72,16 @@ int validatePacket(unsigned int packetSize, char *packet)
     return true;
 }
 
-
+/**
+ * \brief This function is used to Read incoming packets.
+ */
 
 gpointer Serial_Read_Thread()
 {
-  ssize_t r_res;
-  char ob[50];
-  unsigned int count=0;
-  static char buffer[PACKET_MAX_BYTES];
+  ssize_t r_res; //!< variable to store the status of reading and storing packet
+  char ob[50]; //!< char array to store packet
+  unsigned int count=0; //!< counter for packet
+  static char buffer[PACKET_MAX_BYTES]; //!< char array to store buffer
   unsigned int packetSize = PACKET_MIN_BYTES;
   double voltage_disp;
 
@@ -133,11 +153,11 @@ gpointer Serial_Read_Thread()
 
                     if(buffer[2]=='P')
                     {
-		voltage_disp = 256* (double)buffer[3] + (double)buffer[4]; 
-		voltage_disp = voltage_disp * MAX_VOLTAGE / MAX_ADC_VALUE;
-	      g_mutex_lock(mutex_to_protect_voltage_display);
-	      sprintf(c_voltage_value,"%1.3f",voltage_disp);
-	      g_mutex_unlock(mutex_to_protect_voltage_display);
+                        voltage_disp = 256* (double)buffer[3] + (double)buffer[4];
+                        voltage_disp = voltage_disp * MAX_VOLTAGE / MAX_ADC_VALUE;
+                          g_mutex_lock(mutex_to_protect_voltage_display);
+                          sprintf(c_voltage_value,"%1.3f",voltage_disp);
+                          g_mutex_unlock(mutex_to_protect_voltage_display);
                     }
 
                     
