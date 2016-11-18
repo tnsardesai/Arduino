@@ -103,7 +103,7 @@ gpointer Serial_Read_Thread()
 	    {
 	      //this means we have received a byte;
 	      //the byte is in 
-  char b = ob[0];
+            char b = ob[0];
 
 
             // handle the byte according to the current count

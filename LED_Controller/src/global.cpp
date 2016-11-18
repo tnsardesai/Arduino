@@ -3,15 +3,6 @@
  * \author Satej Mhatre
  * \version 1.0
  * \date 2016-17-15
- *
- * \bug None.
- *
- * \warning None.
- *
- * \copyright GNU Public License.
- *
- * \section intro_sec Introduction
- *
  */
 
 #include "global.h"
